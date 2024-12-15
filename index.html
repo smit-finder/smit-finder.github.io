@@ -3,21 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Smit Patel Portfolio</title>
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
             text-align: center;
-            margin: 0;
+            background-color: #f5e9e2;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .welcome {
+            background-color: #d6c9f1;
+            color: #00008b;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .welcome h2 {
+            font-size: 2em;
+        }
+        .welcome p {
+            margin: 20px auto;
+            width: 80%;
+            font-size: 1.2em;
+        }
+        .welcome a {
+            color: #0000ee;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .linkedin-button {
+            background-color: #0077b5;
+            color: white;
+        }
+        .image-placeholder {
+            margin: 30px 0;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .about {
+            position: relative;
+            background: url('placeholder-project-background.jpg') no-repeat center center/cover;
+            color: white;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             padding: 20px;
         }
-        h1 {
-            color: #333;
+        .about h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .checker-container {
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+        }
+        .checker-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .checker-container button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .bullet-points {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            right: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 1em;
+        }
+        .bullet-points ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            max-width: 45%;
+        }
+        .internship {
+            background-color: #222;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .internship span {
+            font-weight: bold;
+            color: #00bfff;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a simple portfolio hosted on GitHub Pages.</p>
+    <!-- Header -->
+    <header>
+        My Portfolio
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Hi! I am Smit Patel, a Computer Science student at UNC Charlotte with a focus on Artificial Intelligence.</h2>
+        <p>I have experience in full-stack development and machine learning. I am eager to learn and improve my skills by contributing to innovative projects.</p>
+        <a href="mailto:smit.patel5@gmail.com">Email - smit.patel5@gmail.com</a>
+        <a href="tel:9806130249">Call Phone - 980-613-0249</a>
+        <br>
+        <a href="https://www.linkedin.com/in/smit-patel-6a121428a" target="_blank" class="linkedin-button">LinkedIn</a>
+    </section>
+
+    <!-- Image Section Placeholder -->
+    <section class="image-placeholder">
+        Image
+    </section>
+
+    <!-- About Project Section -->
+    <section class="about">
+        <div class="bullet-points">
+            <ul>
+                <li>I developed a full-stack password strength checker with a React frontend and Python (Flask) backend.</li>
+                <li>Integrated machine learning model using Keras and TensorFlow to assess password strength based on complexity and security factors.</li>
+            </ul>
+            <ul>
+                <li>This app analyzes passwords using length, character variety, and structural integrity for real-time strength feedback.</li>
+                <li>It has a user-friendly interface, ensuring seamless interaction and immediate results for password evaluations.</li>
+            </ul>
+        </div>
+        <div class="checker-container">
+            <h3>Password Strength Checker</h3>
+            <label>Enter your password:</label>
+            <input type="password" placeholder="*******">
+            <button>Check Strength</button>
+            <p>Password Strength: Moderate</p>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section class="internship">
+        I'm <span>open to new internship opportunities</span>. Feel free to reach out to me via <span>email</span> or <span>phone</span>.
+    </section>
 </body>
 </html>
